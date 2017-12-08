@@ -1,0 +1,71 @@
+提交
+git add .
+git commit -m "fixed some bugs"
+git tag -a 0.1.3 -m "Release version 0.1.3"
+分享提交标签到远程服务器上
+
+git push origin master
+git push origin --tags
+–tags参数表示提交所有tag至服务器端，普通的git push origin master操作不会推送标签到服务器端。
+
+删除标签的命令
+git tag -d 0.1.3
+删除远端服务器的标签
+git push origin :refs/tags/0.1.3
+
+---标签
+git tag -a V1.2 -m 'WebSite version 1.2'
+git push origin --tags
+
+
+---删除远程分支  
+git branch -r -d origin/branch-name 
+git push origin :branch-name 
+
+---删除标签Tag
+git tag -d V1.2
+git push origin :refs/tags/V1.2
+
+
+---查看日志信息
+ git log --graph --pretty=oneline --abbrev-commit
+
+
+ 如果要强行删除，需要使用命令git branch -D feature-vulcan
+
+
+在当前要合并的分支上执行下述操作 例如当前在 branch_20171208
+step1  git checkout -b  local  
+step2  git checkout trunk    
+step3  git merge local   
+step4  git branch -d local 
+
+git stash
+git pull
+git stash pop
+git add -u
+git add 
+git commit -m ""
+git push origin HEAD:refs/for/branch_name
+
+
+---拉分支+推送到远程
+git branch test
+git push origin test
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
