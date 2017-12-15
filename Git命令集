@@ -54,6 +54,28 @@ git branch test
 git push origin test
 
 
+******************************************将branch_dev 合并到 trunk**************************************
+例如将branch_dev 合并到 trunk
+
+在branch_dev下执行
+
+git checkout -b local
+
+git checkout trunk
+
+
+git merge --squash local
+
+git add -u
+
+git commit -m "合并branch_dev到trunk"
+
+git push origin HEAD:refs/for/trunk
+
+
+
+
+
 
 
 
