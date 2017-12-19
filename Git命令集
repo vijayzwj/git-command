@@ -34,12 +34,6 @@ git push origin :refs/tags/V1.2
  如果要强行删除，需要使用命令git branch -D feature-vulcan
 
 
-在当前要合并的分支上执行下述操作 例如当前在 branch_20171208
-step1  git checkout -b  local  
-step2  git checkout trunk    
-step3  git merge local   
-step4  git branch -d local 
-
 git stash
 git pull
 git stash pop
