@@ -20,7 +20,7 @@ git push origin --tags
 
 ---删除远程分支  
 git branch -r -d origin/branch-name 
-git push origin:branch-name // 提交本地origin分支 作为 远程的branch-name分支
+git push origin :branch-name // 提交本地origin分支 作为 远程的branch-name分支
 
 $ git push origin test:master // 提交本地test分支 作为 远程的master分支
 
