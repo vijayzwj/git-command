@@ -84,6 +84,18 @@ git push origin HEAD:refs/for/trunk
 6 最后提交git push origin HEAD:refs/for/master
 
 
+****************************************************************************************
+
+git add abc.txt bcd.txt
+
+git commit  -m 'abc.txt bcd.txt'
+
+此时如果要撤销abc.txt
+
+git rm --cached abc.txt
+
+git commit --amend --allow-empty -m "bcd.txt"
+
 
 
 
