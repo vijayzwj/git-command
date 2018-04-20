@@ -97,6 +97,9 @@ git rm --cached abc.txt
 git commit --amend --allow-empty -m "bcd.txt"
 
 
+最终2次commit合并成一个commit为  “bcd.txt”
+
+
 
 
 
