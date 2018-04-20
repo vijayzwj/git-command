@@ -52,10 +52,9 @@ git push origin test
 
 在branch_dev下执行
 
-git checkout -b local
+git checkout -b local  远程分支
 
 git checkout trunk
-
 
 git merge --squash local
 
