@@ -74,6 +74,8 @@ git push origin HEAD:refs/for/trunk
 
 2 基于修复版本拉取本地分支 issue-101    git checkout -b issue-101
 
+           git checkout -b branch(本地) origin/branch(远程)
+
 3 修复后git add  git commit 
 
 4 切换到修复版本 git master     git merge --no-ff -m "merged bug fix 101" issue-101
