@@ -43,7 +43,7 @@ git push origin HEAD:refs/for/branch_name
 
 
 ---拉分支+推送到远程
-git branch test
+git checkout -b  本地名称(本地名称) 远程名称(origin/zhouleihlwrjeb)
 git push origin test
 
 
