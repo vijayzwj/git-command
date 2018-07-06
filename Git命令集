@@ -1,31 +1,3 @@
-提交
-git add .
-git commit -m "fixed some bugs"
-git tag -a 0.1.3 -m "Release version 0.1.3"
-分享提交标签到远程服务器上
-
-git push origin master
-git push origin --tags
-–tags参数表示提交所有tag至服务器端，普通的git push origin master操作不会推送标签到服务器端。
-
-删除标签的命令
-git tag -d 0.1.3
-删除远端服务器的标签
-git push origin :refs/tags/0.1.3
-
----标签
-git tag -a V1.2 -m 'WebSite version 1.2'
-git push origin --tags
-
-
----删除远程分支  
-git branch -r -d origin/branch-name 
-git push origin :branch-name 
----删除标签Tag
-git tag -d V1.2
-git push origin :refs/tags/V1.2
-
-
 ---查看日志信息
  git log --graph --pretty=oneline --abbrev-commit
 
@@ -41,10 +13,6 @@ git add
 git commit -m ""
 git push origin HEAD:refs/for/branch_name
 
-
----拉分支+推送到远程
-git checkout -b  本地名称(本地名称) 远程名称(origin/zhouleihlwrjeb)
-git push origin test
 
 
 ******************************************将branch_dev 合并到 trunk**************************************
@@ -101,15 +69,24 @@ git commit --amend --allow-empty -m "bcd.txt"
 最终2次commit合并成一个commit为  “bcd.txt”
 
 
+**********************************************************************************************
+---拉分支+推送到远程
+git checkout -b  本地名称(本地名称) 远程名称(origin/zhouleihlwrjeb)
+git push origin test
 
+---删除远程分支  
+git branch -r -d origin/branch-name 
+git push origin :branch-name 
 
+***********************************************************************************************
+---打Tag
+1  创建和删除Tag
+     a> 本地创建：git tag tag_remote_branch_feture  远程创建：git push origin  tag_remote_branch_feture
+     b> 本地删除：git tag -d  tag_remote_branch_feture  远程删除：git push origin :refs/tags/tag_remote_branch_feture
 
+2  还可以创建带有说明的标签，用-a指定标签名，-m指定说明文字：
 
-
-
-
-
-
+     $ git tag -a tag_remote_branch_feture -m "version 0.1 released" 1094adb(commit-id) 
 
 
 
