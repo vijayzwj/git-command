@@ -1,3 +1,12 @@
+
+-------------------查找冲突文件
+配置冲突快捷命令：git config --global alias.conflicts "diff --name-only --diff-filter=u"
+      git conflicts
+
+或者 git diff --name-only --diff-filter=U
+
+
+
 ------------------bug 修复 cherry-pick 同步至master
 
 master分支   git log   bug修复的hash commit
