@@ -12,6 +12,8 @@ git cherry-pick   commit-hash
 
 2.git cherry-pick --abort
 
+  git push -u origin branch_xx
+
 ---------------------git merge与git rebase
 
 1.git merge 形成1个新的commit追加
