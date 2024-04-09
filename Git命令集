@@ -22,6 +22,15 @@ git add .
 git rebase --continue
 
 
+------------------------------知识普及
+git cherry-pick  
+
+git pull                 = git fetch + git merge
+
+git pull --rebase =git fetch + git rebase
+
+
+
 ---查看日志信息
  git log --graph --pretty=oneline --abbrev-commit
 
