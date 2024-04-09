@@ -114,7 +114,8 @@ git branch -r -d origin/branch-name
 git push origin :branch-name 
 
 ***********************************************************************************************
----打Tag
+**************************************打Tag**************************************
+
 1  创建和删除Tag
      a> 本地创建：git tag tag_remote_branch_feture  远程创建：git push origin  tag_remote_branch_feture
      b> 本地删除：git tag -d  tag_remote_branch_feture  远程删除：git push origin :refs/tags/tag_remote_branch_feture
@@ -122,6 +123,8 @@ git push origin :branch-name
 2  还可以创建带有说明的标签，用-a指定标签名，-m指定说明文字：
 
      $ git tag -a tag_remote_branch_feture -m "version 0.1 released" 1094adb(commit-id) 
+
+-----------------------标签是用于标识代码库中的特定版本或里程碑的静态快照。
 
 
 Git撤销与回滚
