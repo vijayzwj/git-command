@@ -1,3 +1,27 @@
+------------------bug 修复 cherry-pick 同步至master
+
+master分支   git log   bug修复的hash commit
+
+git checkout  stable1.1
+
+git cherry-pick   commit-hash
+
+可能出现冲突，解决方案
+
+1.解决冲突
+
+2.git cherry-pick --abort
+
+---------------------git merge与git rebase
+
+1.git merge 形成1个新的commit追加
+
+2.git rebase 变基，将之前的commit 变过去
+
+git add .
+git rebase --continue
+
+
 ---查看日志信息
  git log --graph --pretty=oneline --abbrev-commit
 
