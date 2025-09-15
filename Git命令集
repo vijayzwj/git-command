@@ -191,7 +191,27 @@ reset 是指将HEAD指针指到指定提交，历史记录中不会出现放弃�
     git log --oneline -n5
     git rebase -i "commit id"^
     git push origin master -f
-    
+
+
+**********************************************************************************************************************
+1·直接merge
+
+git checkout  trunk  //trunk为合入目标分支
+
+git merge  hot-fix //将hot-fix合入trunk
+
+2·rebase合入
+
+(hot-fix合入trunk)  git rebase trunk  变基
+
+git  checkout  trunk
+
+git  merge   hot-fix
+
+
+
+
+
     
 
    
