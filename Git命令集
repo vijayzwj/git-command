@@ -209,7 +209,11 @@ git  checkout  trunk
 git  merge   hot-fix
 
 
+由于 rebase 改了提交 SHA，必须强推：
 
+git push origin <你的分支> --force-with-lease
+
+--force-with-lease 比 -f 安全：如果同时有人推了新提交，会被拒绝，防止覆盖同事代码。
 
 
     
